@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    justify-items: center;
+}
+
+
+header{
+    display: flex;
+    margin: auto;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+
+}
+
+header nav ul {
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    color: #1e1e1e;
+    display: block;
+    font-family: "Montserrat" ;
+    font-weight: 600;
+
+}
+
+/*MAIN*/
+article{
+    margin-top: 6rem;
+}
+
+.Head_Banner {
+    position: relative; 
+    text-align: center; 
+}
+
+.Banner  {
+    width: 1440px; 
+    height: 700px; 
+}
+
+.Head_Banner h1 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-family: "Arial Rounded MT Bold";
+    font-size: 3rem;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+
+}
+
+.Head_Banner a{
+    position: absolute; 
+    top: 90%; 
+    left: 50%; 
+    transform: translate(-50%, -100%); 
+}
+
+.Company{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content:space-around;
+}
+.left_part{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+h2{
+    font-size: 2rem;
+    font-family: "Arial Rounded MT Bold";
+    color: #16213D;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+
+}
+
+p{
+    font-family: "Montserrat";
+}
+
+.paragraphes{
+    margin-top: 2.rem;
+    margin-bottom: 4.rem;
+
+}
+.left_part p{
+    margin-bottom: 20px;
+}
+.strong {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.button_decouvrir{
+    display: flex;
+    flex-direction: row;
+}
+.button_decouvrir p{
+    margin: 0;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+.button_decouvrir a{
+    text-decoration: none;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    border-radius: .8125rem;
+    color: white;
+    background-color: #DD4546;
+    display: flex;
+    flex-direction: row;
+    transition: 0.7s;
+}
+.button_decouvrir span{
+    color: white;
+    display: none;
+    white-space: nowrap; 
+}
+.button_decouvrir a:hover p{
+    padding-left: 14px;
+}
+.button_decouvrir a:hover span{
+    transition: 0.7s;
+    display: block;
+    
+}
+
+.expertise{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    flex-direction: column;
+}
+.expertise p{
+    margin-bottom: 20px;
+}
+
+
+.inge_aero{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+.inge_aero img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.inge_aero .right_part{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+    background-color: #2e4480;
+    padding: 75px 64px 75px 64px;
+}
+
+h3{
+    font-family: "Arial Rounded MT Bold";
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: white;
+}
+.inge_aero p{
+    margin-bottom: 2rem;
+}
+.inge_aero .sub_mission{
+    font-family: "Arial Rounded MT Bold";
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.inge_aero ul {
+    padding-left: 1.25rem;
+}
+.inge_aero li{
+    margin-bottom: 1rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.Projects{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.Projects p{
+    margin-bottom: 2rem;
+
+}
+.Projects .card_holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Projects .card_holder .card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #2e4480;
+    color: white;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center; 
+}
+.Projects .card_holder .card_body {
+    align-items: center; 
+    justify-content: center;
+}
+
+.card1 h3, .card2 h3, .card3 h3{
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+}
+.card2 h3{
+    padding-top: 2.8438rem;
+}
+.card p{
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.card h3{
+    position: relative;
+}
+.card h3::after{
+    background-color: #DD4546;
+    content: "";
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    width: 70%;
+    position: absolute;
+    transform: translateX(-50%);
+    
+}
+
+.button_savoir {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.button_savoir a {
+    text-decoration: none;
+    padding: .5rem 1.5rem; /* Ajusté pour enlever le padding droit et gauche redondant */
+    border-radius: .8125rem;
+    color: white;
+    background-color: #DD4546;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centre verticalement le texte et le symbole */
+    transition: background-color 0.3s; /* Ajoute une transition pour le changement de couleur de fond */
+}
+
+.button_savoir .plus {
+    margin-left: 5px; /* Espace entre le texte et le symbole */
+    transition: transform 0.5s ease; /* Transition pour l'animation */
+}
+
+.button_savoir a:hover .plus {
+    transform: rotate(90deg); /* Fait tourner le symbole + */
+    font-size: 20px;
+}
+
+.button_savoir a:hover {
+    background-color: #c0392b; /* Change la couleur de fond au survol */
+}
+
+.card_body .button_savoir p{
+    margin: 0;
+}
+
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 2rem;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    margin-bottom: 96px;
+
+}
+.contact form .div_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact form .left_form{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    gap: 1rem;
+
+}
+.contact form .right_form{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    min-height: 149.5px;
+}
+textarea#message{
+    width: 100%; 
+    height: 100%; 
+    padding: 10px; 
+    font-size: 1rem; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+}
+
+.contact form input, textarea#message, .contact form select, .contact form option {
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: .3125rem #ccc;
+}
+
+.button_submit{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.button_submit button{
+    background-color: #16213D;
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    margin: auto;
+    width: 100%;
+    border-radius: 5px;
+    gap: 10px;
+}
+.button_submit label{
+    padding: 10px 25px 10px 25px;
+}
+.button_submit label a{
+    color: #DD4546;
+}
+.button_submit input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la checkbox et le texte */
+}
+
+footer{
+    background: linear-gradient(to bottom, #2e4480, #3c5da8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.footer_1{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    padding: 32px 20px 32px 20px;
+    justify-content: space-between;
+}
+.footer_1 .footer_1_left{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: flex-start;
+    gap: 1rem;
+
+}
+.footer_1 .footer_1_left img{
+    height: 35px;
+}
+.footer_1 .footer_1_right{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    justify-content: space-evenly;
+}
+.footer_1 .footer_1_right .footer_1_right_a,
+.footer_1 .footer_1_right .footer_1_right_b,
+.footer_1 .footer_1_right .footer_1_right_c{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 26%;
+}
+.footer_1 .footer_1_right li {
+    list-style: none;
+    padding-bottom: 8px;
+}
+.footer_1 .footer_1_right a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-family: "Montserrat";
+}
+.footer_1 .footer_1_right li a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+}
+.footer_1 .footer_1_right .footer_info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+footer hr{
+    background-color: white;
+    width: 100%;
+}
+footer .last_p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        max-width: 768px;
+    }
+    header nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul{
+        margin: auto;
+    }
+    header nav img{
+        width: 165px;
+    }
+    h1{
+        font-size: 2.5rem;
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+    .Head_Banner{
+        max-width: 768px;
+        overflow: hidden;
+    }
+    .banner{
+        width: 768px;
+        height: auto;
+        object-fit: cover;
+    }
+    .Company{
+        overflow: hidden;
+    }
+    .Company img {
+        width: 40%;
+        height: auto;
+        object-fit: cover;
+    }
+    .expertise{
+        width: 95%;
+    }
+    .inge_aero{
+        overflow: hidden;
+    }
+    .inge_aero img{
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+    .inge_aero .right_part{
+        padding: 35px 64px 35px 64px;
+    }
+    .Projects{
+        width: 95%;
+    }
+    .contact{
+        width: 95%;
+    }
+    .footer_1{
+        width: 95%;
+    }
+    .footer_1 .footer_1_left{
+        display: none;
+    }
+    .footer_1 .footer_1_right{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    body{
+        max-width: 499px;
+    }
+    header nav ul{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    .Head_Banner{
+        max-width: 499px;
+        overflow: hidden;
+    }
+    .banner{
+        width: 499px;
+        height: auto;
+        object-fit: cover;
+    }
+    .Company{
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .left_part{
+        width: 95%;
+    }
+    .Company img{
+        margin-top: 4rem;
+        width: 95%;
+        height: 598px;
+        object-fit: cover;
+    }
+    .inge_aero{
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .inge_aero img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .inge_aero .right_part{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .inge_aero .right_part ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inge_aero .right_part p{
+        text-align: center;
+    }
+
+    
+    .Projects .card_holder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Projects .card_holder .card{
+        width: 97%;
+        margin-bottom: 2rem;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+    
+    .contact form .div_form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .contact form .left_form, .contact form .right_form{
+        width: 95%;
+    }
+    .contact form .right_form{
+        margin-top: 1rem;
+    }
+    .contact form .right_form{
+        display: flex;
+        flex-direction: column;
+    }
+    textarea#message{
+        width: 100%; 
+        min-height: 192px;
+        padding: 10px; 
+        font-size: 1rem; 
+        border-radius: 5px; 
+        box-sizing: border-box;
+    }
+    .footer_1{
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+    .footer_1 .footer_1_left{
+        display: flex;
+        width: 80%;
+        align-items: center;
+    }
+    .footer_1 .footer_1_right{
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .footer_1 .footer_1_right .footer_1_right_a,
+    .footer_1 .footer_1_right .footer_1_right_b,
+    .footer_1 .footer_1_right .footer_1_right_c{
+    width: 100%;
+    align-items: center;
+    }
+    .footer_1 h3{
+        margin-bottom: 0;
+    }
+    .footer_1 li{
+        text-align: center;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.montserrat-semibold {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Arial Rounded MT'; /* Remplacez par le nom de votre police */
+    src: url('./fonts/arial-mt-webfont/ARIALROUNDEDMT.woff') format('woff2'); /* Remplacez par le nom de votre fichier */
+    font-weight: 400; /* Ajustez selon le poids de la police */
+    font-style: normal; /* Ajustez selon le style de la police */
+}
+
+@font-face {
+    font-family: 'Arial Rounded MT Bold'; /* Remplacez par le nom de votre police */
+    src: url('./fonts/arial-mt-webfont/ARIALROUNDEDMT.woff') format('woff2'); /* Remplacez par le nom de votre fichier */
+    font-weight: bolder; /* Ajustez selon le poids de la police */
+    font-style: normal; /* Ajustez selon le style de la police */
+}
