@@ -134,7 +134,7 @@
                         <input type="text" id="nom" name="nom&prenom" placeholder="Nom & Prénom *" required>
                         <input type="email" id="email" name="email" placeholder="Email *" required>
                         <input type="tel" id="telephone" name="telephone" placeholder="Téléphone *"
-                            pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
+                            pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required>
                         <select id="sujet" name="choixsujet" required>
                             <option value="" disabled selected>Votre message concerne...</option>
                             <option value="option1">Devis et étude de projet</option>
@@ -149,7 +149,7 @@
                     </div>
                     <div class="button_submit">
                         <label for="checkbox1">
-                            <input type="checkbox" name="validation" id="validation">En soumettant ce formulaire,
+                            <input type="checkbox" name="validation" id="validation" required>En soumettant ce formulaire,
                             j'autorise que les informations saisies soient utilisées pour permettre de me recontacter
                             ainsi que les conditions relatives à l'utilisation de mes données personnelles décrites dans
                             les <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" title="En cliquant ici, vous serez reidirigez vers le site de la RGPD" aria-label="En cliquant ici, vous serez reidirigez vers le site de la RGPD" target="_blank">mentions légales</a>.
