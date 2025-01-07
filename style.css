@@ -5,14 +5,12 @@ https://rocketteslim.github.io/Eval-Asterial/
 
 .montserrat {
     font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
 
 .montserrat-semibold {
     font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
   }
@@ -27,7 +25,7 @@ https://rocketteslim.github.io/Eval-Asterial/
 @font-face {
     font-family: 'Arial Rounded MT Bold'; /* Remplacez par le nom de votre police */
     src: url('./fonts/arial-mt-webfont/ARIALROUNDEDMT.woff') format('woff2'); /* Remplacez par le nom de votre fichier */
-    font-weight: bolder; /* Ajustez selon le poids de la police */
+    font-weight: 900; /* Ajustez selon le poids de la police */
     font-style: normal; /* Ajustez selon le style de la police */
 }
 
@@ -650,8 +648,12 @@ footer .last_p{
     }
     .footer_1 .footer_1_left{
         display: flex;
-        width: 80%;
+        width: fit-content;
         align-items: center;
+    }
+    .footer_1 .footer_1_left p{
+        width: 100%;
+        text-align: center;
     }
     .footer_1 .footer_1_right{
         width: 95%;
@@ -727,6 +729,10 @@ footer .last_p{
 
     .paragraphes{
         margin: 0;
+    }
+
+    .footer_1_left p{
+
     }
 
 }
