@@ -35,6 +35,9 @@ https://rocketteslim.github.io/Eval-Asterial/
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth; /* Active le défilement fluide */
+}
 
 svg{
     height: 15px;
@@ -63,20 +66,45 @@ header nav ul {
     margin: auto;
     margin-right: 0;
 }
-
 header nav li {
     list-style: none;
 }
 
 header nav a {
     text-decoration: none;
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    padding: 1.5rem 2rem; /* Padding général */
     color: #1e1e1e;
-    display: block;
-    font-family: "Montserrat" ;
+    display: inline-block; /* Permet à l'élément de s'adapter à la taille du texte */
+    font-family: "Montserrat";
     font-weight: 600;
+    position: relative; /* Pour positionner le pseudo-élément */
 }
 
+header li a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: .625rem; /* Positionne la ligne en bas */
+    width: 100%; /* Largeur de la ligne (s'adapte au texte) */
+    height: 1px; /* Épaisseur de la ligne */
+    background-color: #1e1e1e; /* Couleur de la ligne */
+    transform: scaleX(1); /* Affiche la ligne */
+    transform-origin: left; /* Point d'origine de l'animation */
+    transition: transform 0.5s ease; /* Animation fluide */
+}
+
+header li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: .625rem;
+    width: 100%;
+    height: 1px;
+    background-color: #1e1e1e;
+    transform: scaleX(0); /* Masque la ligne par défaut */
+    transform-origin: left;
+    transition: transform 0.2s ease; /* Animation fluide */
+}
 /*MAIN*/
 article{
     margin-top: 6rem;
@@ -152,7 +180,7 @@ p{
 }
 
 .left_part p{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .strong {
@@ -170,8 +198,9 @@ p{
     margin: 0;
     font-family: "Montserrat";
     font-weight: 500;
+    transition: 0.7s;
 }
-.button_decouvrir a{
+.button_decouvrir a {
     text-decoration: none;
     padding: .5rem 1.5rem .5rem 1.5rem;
     border-radius: .8125rem;
@@ -179,21 +208,29 @@ p{
     background-color: #DD4546;
     display: flex;
     flex-direction: row;
+    align-items: center; /* Aligner les éléments verticalement */
     transition: 0.7s;
 }
-.button_decouvrir span{
+
+.button_decouvrir span {
     color: white;
-    display: none;
-    white-space: nowrap; 
+    visibility: hidden; /* Masquer sans affecter la mise en page */
+    opacity: 0; /* Rendre invisible */
+    white-space: nowrap;
     transition: 0.7s;
+    position: absolute;
 }
-.button_decouvrir a:hover p{
+
+.button_decouvrir a:hover p {
     padding-left: .875rem;
     transition: 0.7s;
 }
-.button_decouvrir a:hover span{
+
+.button_decouvrir a:hover span {
+    visibility: visible; /* Afficher */
+    opacity: 1; /* Rendre visible */
     transition: 0.7s;
-    display: block;
+    position: relative;
 }
 
 .expertise{
@@ -339,7 +376,7 @@ h3{
     display: flex;
     flex-direction: row;
     align-items: center; /* Centre verticalement le texte et le symbole */
-    transition: background-color 0.3s; /* Ajoute une transition pour le changement de couleur de fond */
+    transition: background-color 0.3s; /* Transition pour le changement de couleur de fond */
 }
 
 .button_savoir .plus {
@@ -348,8 +385,8 @@ h3{
 }
 
 .button_savoir a:hover .plus {
-    transform: rotate(90deg); /* Fait tourner le symbole + */
-    font-size: 1.25rem;
+    transform: rotate(90deg) scale(1.2); /* Rotation + agrandissement visuel */
+    /* font-size: 1.25rem; */ /* Supprimez cette ligne */
 }
 
 .button_savoir a:hover {
