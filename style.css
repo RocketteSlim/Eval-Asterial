@@ -39,10 +39,9 @@ html {
     scroll-behavior: smooth; /* Active le défilement fluide */
 }
 
-svg{
+path, svg{
     height: 15px;
     width: 24px;
-    resize: none;
 }
 
 header{
@@ -160,6 +159,7 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-right: 4rem;
 }
 
 h2{
@@ -321,11 +321,11 @@ h3{
 .Projects .card_holder .card{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 31%;
     background-color: #2e4480;
     color: white;
     border-radius: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center; 
 }
 .Projects .card_holder .card_body {
@@ -459,7 +459,7 @@ textarea#message{
 .button_submit button{
     background-color: #16213D;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     padding: 1rem;
     margin: auto;
     width: 100%;
@@ -544,6 +544,13 @@ footer .last_p{
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
+@media screen and (max-width: 1120px) {
+    .Company img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+}
 @media screen and (max-width:900px) {
     header nav{
         flex-direction: column;
@@ -569,7 +576,7 @@ footer .last_p{
 
 @media screen and (max-width: 800px) {
     body{
-        max-width: 768px;
+        max-width: 800px;
     }
     
     h1{
@@ -578,7 +585,7 @@ footer .last_p{
         padding-right: 2.9375rem;
     }
     .Head_Banner{
-        max-width: 768px;
+        max-width: 800px;
         overflow: hidden;
     }
     .banner{
@@ -589,8 +596,9 @@ footer .last_p{
     .Company{
         overflow: hidden;
     }
+    
     .Company img {
-        width: 40%;
+        width: 50%;
         height: auto;
         object-fit: cover;
     }
@@ -599,6 +607,8 @@ footer .last_p{
     }
     .inge_aero{
         overflow: hidden;
+        width: 100%;
+
     }
     .inge_aero img{
         width: 50%;
@@ -608,14 +618,43 @@ footer .last_p{
     .inge_aero .right_part{
         padding: 2.1875rem 4rem 2.1875rem 4rem;
     }
-    .Projects{
-        width: 95%;
-    }
+    
     .contact{
         width: 95%;
     }
     
 }
+
+@media screen and (max-width: 767px) {
+.Company{
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.left_part{
+    width: 95%;
+    padding-right: 0;
+}
+.Company img{
+    margin-top: 4rem;
+    width: 95%;
+    height: 598px;
+    object-fit: cover;
+}
+.Projects{
+    width: 95%;
+}
+.Projects .card_holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Projects .card_holder .card{
+    width: 95%;
+    margin-bottom: 2rem;
+}
+}
+
 
 @media screen and (max-width: 600px) {
     article{
@@ -626,20 +665,7 @@ footer .last_p{
         margin: auto;
         align-items: center;
     }
-    .Company{
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
-    }
-    .left_part{
-        width: 95%;
-    }
-    .Company img{
-        margin-top: 4rem;
-        width: 95%;
-        height: 598px;
-        object-fit: cover;
-    }
+    
     .inge_aero{
         overflow: hidden;
         flex-direction: column;
@@ -668,15 +694,7 @@ footer .last_p{
         text-align: center;
     }
 
-    .Projects .card_holder{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .Projects .card_holder .card{
-        width: 97%;
-        margin-bottom: 2rem;
-    }
+    
     .footer_1{
         width: 95%;
         flex-direction: column;
